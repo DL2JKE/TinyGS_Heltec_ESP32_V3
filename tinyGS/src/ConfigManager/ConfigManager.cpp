@@ -47,6 +47,7 @@ ConfigManager::ConfigManager()
                                                                                                                                         {0x3c, 21, 22, 16, 38, 22, 1, 18, 26, 33, 0, 14, 19, 27, 5, 0.0f, "T-BEAM V1.0 + OLED"},                                         // @fafu
                                                                                                                                         {0x3c, 21, 22, 16, 0, 2, 0, 5, 0, 34, 32, 14, 19, 27, 18, 1.6f, "433Mhz FOSSA 1W Ground Station"},                               // @jgromes
                                                                                                                                         {0x3c, 21, 22, 16, 0, 2, 0, 5, 0, 34, 32, 14, 19, 27, 18, 1.6f, "868-915Mhz FOSSA 1W Ground Station"},                           // @jgromes
+                                                                                                                                        {0x3c, 17, 18,21, 0, 35, 0, 8, 26, 14, 13, 12, 11, 10, 9, 0.0f, "863-928MHz HELTEC WiFi LoRA V3"},                               // @dl2jke
                                                                                                                                     })
 {
   server.on(ROOT_URL, [this] { handleRoot(); });
