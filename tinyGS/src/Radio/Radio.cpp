@@ -29,7 +29,7 @@ bool eInterrupt = true;
 bool noisyInterrupt = false;
 
 Radio::Radio()
-    : spi(VSPI)
+    : spi(FSPI)
 {
 }
 
