@@ -472,9 +472,8 @@ void NTPClient::s_receiverTask (void* arg){
                 DEBUGLOGV ("pbuff type: %d", self->lastNtpResponsePacket->type);
                 DEBUGLOGV ("pbuff ref: %d", self->lastNtpResponsePacket->ref);
                 DEBUGLOGV ("pbuff next: %p", self->lastNtpResponsePacket->next);
-                if (self->lastNtpResponsePacket->type <= PBUF_POOL)
 #endif
-                    pbuf_free (self->lastNtpResponsePacket);
+                pbuf_free (self->lastNtpResponsePacket);
             }
             self->responsePacketValid = false;
         }
@@ -741,9 +740,8 @@ boolean NTPClient::sendNTPpacket () {
         DEBUGLOGV ("pbuff type: %d", buffer->type);
         DEBUGLOGV ("pbuff ref: %d", buffer->ref);
         DEBUGLOGV ("pbuff next: %p", buffer->next);
-        if (buffer->type <= PBUF_POOL)
 #endif
-            pbuf_free (buffer);
+        pbuf_free (buffer);
     }
     if (result == ERR_OK) {
         DEBUGLOGI ("UDP packet sent");
