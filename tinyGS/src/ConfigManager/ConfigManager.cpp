@@ -70,6 +70,8 @@ ConfigManager::ConfigManager()
   {      0x3c,       21,        22,       16,           0,        22,      8,     5,     26,     34,     32,    14,      19,     27,    18,     0.0f,   UNUSED, UNUSED, "2.4GHz ESP32 + SX1280"  },              //SX1280 @g4lile0
   {      0x3c,       21,        22,       16,          38,        22,      2,    18,     26,     33,   UNUSED , 14,      19,     27,     5,     0.0f,   UNUSED, UNUSED, "868-915MHzT-BEAM V1.0 + OLED"     },              // SX1278 @fafu
 
+  {      0x3c,       17,        18,       21,           0,        35,      6,     8,   UNUSED,   14,     13,    12,      11,     10,     9,     0.0f,   UNUSED, UNUSED, "863-928MHz HELTEC WiFi LoRA 32 V3" },
+
   })
 {
   server.on(ROOT_URL, [this] { handleRoot(); });
