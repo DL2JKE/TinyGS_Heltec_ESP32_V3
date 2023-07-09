@@ -11,8 +11,9 @@ Changes (after fixing the problem between keyboard and chair):
 - ** Added the 433-510MHz and 863-870MHz boards to the configuration.
 
 # Hints
+
 - ** In contrast to wiring plan, the XTAL must be provided with voltage (hence 1.6f in board configuration).
-- ** The board's WiFi receiver easily goes into saturation (needs a distance of 6m to the WiFi-AP; AVM-Fritz!; learned that the hard way).
+- ** The board's WiFi receiver easily goes into saturation (needs a distance of 6m to the WiFi-AP; AVM-Fritz!; learned the hard way).
 
 # License
 
