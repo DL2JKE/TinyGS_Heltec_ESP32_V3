@@ -87,6 +87,7 @@ enum boardNum
   ESP32_SX1280_1,
   TBEAM_OLED_v1_0_HF,
   HELTEC_V3_HF,
+  HELTEC_V3_LF,
 
   NUM_BOARDS //this line always has to be the last one
 };
